@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen&display=swap%27);');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #060AB2;
+    display: flex;
+}
+
+.covering{
+    height: 640px;
+    width: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.card{
+    margin: 5px;
+    height:calc(25% - 10px);
+    width: calc(25% - 10px);
+    position: relative;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+.card:active{
+    transform: scale(0.97);
+}
+
+.front,.back{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 20px;
+}
+.back{
+    object-fit: cover;
+    z-index: -1;
+    display: flex;
+}
+
+.front{
+    font-size: auto;
+    color: black;
+    background-color: yellow;
+    line-height: 150px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Press Start 2P';
+
+}
