@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Silkscreen';
+    height: 100vh;
+
+}
+
+
+.qmark{
+    width: 100px;
+    height: 150px;
+    font-size: 40px;
+    font-family: "press start 2p";
+}
+
+.memory-game{
+    border: 2px solid lime;
+    height: 640px;
+    width: 640px;
+}
+
+.cards{
+    border: 2px solid aqua;
+}
+
+.qmark,back-face{
+    border: 2px solid deeppink;
+}
