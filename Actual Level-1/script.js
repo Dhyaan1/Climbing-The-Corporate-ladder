@@ -36,12 +36,16 @@ function disableCards(){
     resetBoard();
 }
 function unFlipCard(){
+    firstCard.classList.add('shake')
+    secondCard.classList.add('shake')
     lockBoard=true;
     setTimeout(()=>{
-    firstCard.classList.remove('flip','shake')
-    secondCard.classList.remove('flip','shake')
+    firstCard.classList.remove('shake')
+    secondCard.classList.remove('shake')
+    firstCard.classList.remove('flip')
+    secondCard.classList.remove('flip')
     resetBoard();
-}, 750)
+    }, 750)
 }
 function resetBoard()
 {

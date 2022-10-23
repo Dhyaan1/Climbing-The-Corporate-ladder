@@ -10,34 +10,35 @@ body{
     height: 100vh;
     background-color: #060AB2;
     display: flex;
-}
 
+}
 .covering{
+    margin: auto;
+}
+.deck{
     height: 640px;
     width: 640px;
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
-    perspective: 1000px;
+    
+    
 }
 .card.shake{
     animation: shake 0.35s ease-in-out;
   }
   @keyframes shake {
     0%, 100%{
-      transform: translateX(0);
+      transform: rotateZ(0deg);
     }
     20%{
-      transform: translateX(-13px);
+      transform: rotateZ(2deg);
     }
     40%{
-      transform: translateX(13px);
+      transform: rotateZ(-2deg);
     }
-    60%{
-      transform: translateX(-8px);
-    }
+
     80%{
-      transform: translateX(8px);
+      transform: rotateZ(2deg);
     }
   }
 .card{
@@ -45,6 +46,7 @@ body{
     height:calc(25% - 20px);
     width: calc(25% - 20px);
     position: relative;
+    
     transform: scale(1);
     transition: transform 0.2s;
     transform-style: preserve-3d;
@@ -53,8 +55,11 @@ body{
     transform: scale(0.95);
     transition: transform 0.5s;
 }
-.card.flip{
-    transform: rotateY(180deg);
+.card.flip .back{
+  transform: rotateY(0);
+}
+.card.flip .front{
+  transform: rotateY(180deg);
 }
 
 .front,.back{
@@ -81,9 +86,11 @@ body{
     font-size: 50px;
     font-family: 'Press Start 2P';
     
+    
 
 }
 
 .timer{
-    border: lime;
+    background-color: white;
+    width: 640px;
 }
