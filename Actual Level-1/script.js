@@ -1,12 +1,32 @@
-const cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll('.card'),
+timeTag = document.querySelector(".time b");
+scoreTag = document.querySelector(".score b");
 
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+let maxTime = 60;
+let timeLeft = maxTime;
+let timer;
+let matchedCard = 0;
+let isPlaying = false;
+let score = 0;
 
-
-
+function initTimer() {
+    if(timeLeft <= 0) {
+        return clearInterval(timer);
+    }
+    timeLeft--;
+    score = timeLeft*42069
+    timeTag.innerText = timeLeft;
+    scoreTag.innerText = score;
+    this.classList.add("score");
+}
 function flipCard(){
+    if(!isPlaying) {
+        isPlaying = true;
+        timer = setInterval(initTimer, 1000);
+    }
     if(lockBoard) return;
     if(this===firstCard) return;
     this.classList.add('flip');
@@ -33,6 +53,10 @@ function checkForMatch(){
 function disableCards(){
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
+    matchedCard++;
+    if(matchedCard == 8 && timeLeft > 0) {
+        return clearInterval(timer);
+    }
     resetBoard();
 }
 function unFlipCard(){
@@ -58,3 +82,5 @@ function resetBoard()
     })
 })();
 cards.forEach(card => card.addEventListener('click',flipCard))
+
+document.getElementById("Demo").innerHTML= score
