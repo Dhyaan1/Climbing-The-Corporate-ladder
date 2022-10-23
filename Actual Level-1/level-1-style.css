@@ -18,6 +18,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    perspective: 1000px;
 }
 
 .card{
@@ -26,11 +27,17 @@ body{
     width: calc(25% - 10px);
     position: relative;
     transform: scale(1);
-    transition: transform 0.5s;
+    transition: transform 0.2s;
+    transform-style: preserve-3d;
 }
 
 .card:active{
-    transform: scale(0.97);
+    transform: scale(0.95);
+    transition: transform 0.5s;
+}
+
+.card.flip{
+    transform: rotateY(180deg);
 }
 
 .front,.back{
@@ -38,11 +45,14 @@ body{
     width: 100%;
     position: absolute;
     border-radius: 20px;
+    backface-visibility: hidden;
+    
 }
 .back{
     object-fit: cover;
     z-index: -1;
     display: flex;
+    transform: rotateY(180deg);
 }
 
 .front{
@@ -53,5 +63,6 @@ body{
     text-align: center;
     font-size: 50px;
     font-family: 'Press Start 2P';
+    
 
 }
