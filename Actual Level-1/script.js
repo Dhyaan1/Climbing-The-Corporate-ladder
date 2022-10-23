@@ -38,8 +38,8 @@ function disableCards(){
 function unFlipCard(){
     lockBoard=true;
     setTimeout(()=>{
-    firstCard.classList.remove('flip')
-    secondCard.classList.remove('flip')
+    firstCard.classList.remove('flip','shake')
+    secondCard.classList.remove('flip','shake')
     resetBoard();
 }, 750)
 }

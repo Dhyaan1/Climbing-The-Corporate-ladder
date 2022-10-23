@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen&display=swap%27);');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen&display=swap%27');
 
 *{
     margin: 0;
@@ -20,22 +20,39 @@ body{
     margin: auto;
     perspective: 1000px;
 }
-
+.card.shake{
+    animation: shake 0.35s ease-in-out;
+  }
+  @keyframes shake {
+    0%, 100%{
+      transform: translateX(0);
+    }
+    20%{
+      transform: translateX(-13px);
+    }
+    40%{
+      transform: translateX(13px);
+    }
+    60%{
+      transform: translateX(-8px);
+    }
+    80%{
+      transform: translateX(8px);
+    }
+  }
 .card{
-    margin: 5px;
-    height:calc(25% - 10px);
-    width: calc(25% - 10px);
+    margin: 10px;
+    height:calc(25% - 20px);
+    width: calc(25% - 20px);
     position: relative;
     transform: scale(1);
     transition: transform 0.2s;
     transform-style: preserve-3d;
 }
-
 .card:active{
     transform: scale(0.95);
     transition: transform 0.5s;
 }
-
 .card.flip{
     transform: rotateY(180deg);
 }
@@ -59,10 +76,14 @@ body{
     font-size: auto;
     color: black;
     background-color: yellow;
-    line-height: 150px;
+    line-height: 140px;
     text-align: center;
     font-size: 50px;
     font-family: 'Press Start 2P';
     
 
+}
+
+.timer{
+    border: lime;
 }
