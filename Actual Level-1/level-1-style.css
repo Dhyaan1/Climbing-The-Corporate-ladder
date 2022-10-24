@@ -106,7 +106,7 @@ p{
   margin-top: 15px;
   padding: 0 20px;
   border-radius: 7px;
-  background: #590696;
+  background-image: url('level-1-bg.png');
   height: calc(100% / 4 - 30px);
   justify-content: space-between;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
