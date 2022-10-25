@@ -18,8 +18,8 @@ body{
 }
 
 .deck{
-    height: 640px;
-    width: 640px;
+    height: 720px;
+    width: 720px;
     display: flex;
     flex-wrap: wrap;
     
@@ -87,13 +87,13 @@ body{
     color:  #37E2D5;
     text-shadow: 2px 2px 0px black;
     background-color: #FBCB0A;
-    line-height: 140px;
+    line-height: 160px;
     text-align: center;
     font-size: 50px;
     font-family: 'Press Start 2P';
 }
 p{
-  font-size: 20px;
+  font-size: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,28 +101,24 @@ p{
 .details{
   font-family: 'silkscreen';
   color: white;
-  border: 2px solid white;
+  border: 3px solid white;
   width: 100%;
-  margin-top: 15px;
-  padding: 0 20px;
+  margin-top: 16px;
   border-radius: 7px;
-  background-image: url('level-1-bg.png');
+  background-image: url('pxArt.png');
   height: calc(100% / 4 - 30px);
   justify-content: space-between;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 .timer{
   color: #EA047E
   
 }
 .details p{
-  font-size: 25px;
-  height: 25px;
-  padding-right: 18px;
-  border-right: 1px solid #ccc;
+  font-size: 45px;
+  height: 85px;
 }
 .details p span{
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .details p b{
   font-weight: 500;
