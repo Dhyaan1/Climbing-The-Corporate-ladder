@@ -3,8 +3,8 @@
     <title>Level 3</title>
     <style>
       body {
-        background: #0505d8;
-        color: #fff;
+        background-image: url('immmg/istockphoto.jpg');
+        color: rgb(255, 255, 255);
         font-family: sans-serif;
         font-size: 2em;
         text-align: center;
@@ -13,10 +13,22 @@
         border: solid .2em #fff;
         height: 90vh;
       }
+     .points, #score
+      {
+        background-color: yellowgreen;
+        border-radius: 7px;
+      }
+      div{
+        background-color: white;
+        border-radius: 8px;
+      }
     </style>
 </head>
 <body>
-    <div id="score"></div>
+    <audio autoplay><source src="background music.mp3" type="audio/mpeg"></audio>
+    <center><p><img src="immmg/pxArt (2).png" alt=""></p></center>
+    <p class="points">Score:<div id="score"></div></p>
+    <div><a href="http://">Go To Home Page</a></div>
     <canvas id="tetris" width="240" height="400"></canvas>
     <script src="tetris2.js"></script>
 </body>
