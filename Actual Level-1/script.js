@@ -83,5 +83,3 @@ function resetBoard()
     })
 })();
 cards.forEach(card => card.addEventListener('click',flipCard))
-
-document.getElementById("Demo").innerHTML= score
