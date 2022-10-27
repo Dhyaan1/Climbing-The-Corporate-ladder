@@ -18,9 +18,10 @@ body {
 
   canvas {
     border:  1px solid cyan;
-    height: 600px;
+    height: 1800px;
     margin: 0;
     position: relative;
+    z-index: 2;
   }
  .points
   { font-family: 'Press Start 2P';
@@ -54,7 +55,8 @@ body {
   .mouth-top,.mouth-bottom{
     margin-left: auto;
     margin-right:auto;
-    width: 400px;
+    width: 1200px;
+    height: 300;
     margin: 0;
     padding: 0;
 
@@ -62,8 +64,12 @@ body {
 
   .mouth-bottom{
     position: relative;
-    top: -110px;
-    height: 300;
+    top: -5px;
     padding-bottom: 0;
 
+  }
+
+  .mouth-top{
+    position: relative;
+    top: 40px;
   }
