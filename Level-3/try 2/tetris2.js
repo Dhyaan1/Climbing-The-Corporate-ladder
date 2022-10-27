@@ -56,8 +56,8 @@ function createPiece(type)
     } else if (type === 'L') {
         return [
             [0, 2, 0],
-            [0, 2, 0],
-            [0, 2, 2],
+            [0, 2, 2, 0],
+            [0, 2],
         ];
     } else if (type === 'J') {
         return [
@@ -163,6 +163,7 @@ function playerMove(offset) {
 
 function playerReset() {
     const pieces = 'TJLOSZI';
+    
     player.matrix = createPiece(pieces[pieces.length * Math.random() | 0]);
     player.pos.y = 0;
     player.pos.x = (arena[0].length / 2 | 0) -
