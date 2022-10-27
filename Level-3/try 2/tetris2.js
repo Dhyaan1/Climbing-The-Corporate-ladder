@@ -1,6 +1,7 @@
 const canvas = document.getElementById('tetris');
 const context = canvas.getContext('2d');
 
+
 context.scale(20, 20);
 
 function arenaSweep() {
@@ -111,8 +112,13 @@ function drawMatrix(matrix, offset) {
 }
 
 function draw() {
-    context.fillStyle = '#000';
-    context.fillRect(0, 0, canvas.width, canvas.height);
+    const image = new Image(60, 45); 
+    image.onload = drawImageActualSize; 
+    image.src = "immmg/suit background.png";
+    function drawImageActualSize() {
+      context.drawImage(this, 0, 0, 12, 20);
+    }
+
 
     drawMatrix(arena, {x: 0, y: 0});
     drawMatrix(player.matrix, player.pos);
