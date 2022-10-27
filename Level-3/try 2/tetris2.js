@@ -56,8 +56,8 @@ function createPiece(type)
     } else if (type === 'L') {
         return [
             [0, 2, 0],
-            [0, 2, 2, 0],
-            [0, 2],
+            [0, 2, 0],
+            [0, 2, 2],
         ];
     } else if (type === 'J') {
         return [
@@ -99,13 +99,19 @@ function drawMatrix(matrix, offset) {
                 context.fillRect(x + offset.x,
                                  y + offset.y,
                                  1, 1);
+                context.shadowColor = "#F7CECF";
+                context.shadowBlur = 20;
+                context.lineJoin = "bevel";
+                context.lineWidth = 15;
+                context.strokeStyle = "#38f";
+                context.strokeRect(30, 1, 1, 1);
             }
         });
     });
 }
 
 function draw() {
-    context.fillStyle = '#000';
+    context.fillStyle = '#0000';
     context.fillRect(0, 0, canvas.width, canvas.height);
 
     drawMatrix(arena, {x: 0, y: 0});
