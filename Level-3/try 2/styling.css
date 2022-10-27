@@ -13,13 +13,13 @@ body {
   canvas {
     border:  1px solid cyan;
     background-image: url("immmg/suit background.png"); 
-    height: 2500px;
+    height: 600px;
     margin: 0;
     position: relative;
   }
  .points
   { font-family: 'Press Start 2P';
-    font-size: 40px;
+    font-size: 27px;
     border-radius: 7px;
     height: 35px;
     margin: 10;
@@ -29,7 +29,7 @@ body {
   }
   #score
   { font-family: 'Press Start 2P';
-    font-size: 180px;
+    font-size: 80px;
     border-radius: 7px;
     height: 35px;
     margin: 10;
