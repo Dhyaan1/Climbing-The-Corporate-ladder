@@ -1,32 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen&display=swap%27');
+
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     font-size: 2em;
     text-align: center;
-    border-image: url('immmg/ascii\ effect\ mouth.png') 30 round;
+    background-image: url('immmg/asciieffectmouth.png');
+    
   }
 
   .container{
     margin: 0;
     padding: 0;
-    background: black;
     z-index: 1;
   }
 
   canvas {
-    border: solid .2em #fff;
+    border:  1px solid cyan;
     height: 600px;
     margin: 0;
     position: relative;
-    bottom: 100px;
-  
-  
   }
- .points, #score
-  {
-    background-color: yellowgreen;
+ .points
+  { font-family: 'Press Start 2P';
+    font-size: 27px;
     border-radius: 7px;
+    height: 35px;
+    margin: 10;
+    width: 200px;
+    color: aliceblue;
+
+  }
+  #score
+  { font-family: 'Press Start 2P';
+    font-size: 40px;
+    border-radius: 7px;
+    height: 35px;
+    margin: 10;
+    width: 200px;
+    color: aliceblue;
+
+  }
+  .home{
+    border-radius: 7px;
+    border-color: aliceblue;
+    height: 4px;
+    margin: 10;
+    width: 200px;
+    color: aliceblue;
   }
 
   .mouth-top,.mouth-bottom{
