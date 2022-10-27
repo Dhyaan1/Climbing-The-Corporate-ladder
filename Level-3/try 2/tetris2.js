@@ -99,19 +99,19 @@ function drawMatrix(matrix, offset) {
                 context.fillRect(x + offset.x,
                                  y + offset.y,
                                  1, 1);
-                context.shadowColor = "#F7CECF";
-                context.shadowBlur = 20;
+                context.shadowColor = "#000";
+                context.shadowBlur = 5;
                 context.lineJoin = "bevel";
                 context.lineWidth = 15;
                 context.strokeStyle = "#38f";
-                context.strokeRect(30, 1, 1, 1);
+                context.strokeRect(30, 0, 0, 0);
             }
         });
     });
 }
 
 function draw() {
-    context.fillStyle = '#0000';
+    context.fillStyle = '#000';
     context.fillRect(0, 0, canvas.width, canvas.height);
 
     drawMatrix(arena, {x: 0, y: 0});
