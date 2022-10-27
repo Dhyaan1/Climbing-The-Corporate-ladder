@@ -99,10 +99,10 @@ function drawMatrix(matrix, offset) {
                 context.fillRect(x + offset.x,
                                  y + offset.y,
                                  1, 1);
-                context.shadowColor = "#000";
-                context.shadowBlur = 5;
+                context.shadowColor = colors[value];//hereeeeeeeeeeeeeeeeeeeeee
+                context.shadowBlur = 55;///extent of the shadow
                 context.lineJoin = "bevel";
-                context.lineWidth = 15;
+                context.lineWidth = 5;
                 context.strokeStyle = "#38f";
                 context.strokeRect(30, 0, 0, 0);
             }
@@ -197,7 +197,7 @@ function playerRotate(dir) {
 }
 
 let dropCounter = 0;
-let dropInterval = 1000;
+let dropInterval = 350; //game speed
 
 let lastTime = 0;
 function update(time = 0) {
