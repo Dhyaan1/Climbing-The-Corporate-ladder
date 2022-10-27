@@ -9,6 +9,9 @@ export default class Experience{
         const renderer = new THREE.WebGLRenderer();
 
         renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.outputEncoding = THREE.sRGBEncoding;
+        renderer.shadowMap.enabled = true;
+        renderer.shadowMap.type = THREE.PCFSoftShadowMap;
         document.body.appendChild(renderer.domElement);
         const loader = new GLTFLoader();
         var cube;
@@ -16,19 +19,29 @@ export default class Experience{
             './gltfs/delete.glb',
             function(gltf){
                 cube= gltf.scene;
+                gltf.scene.traverse( function( node ) {
+
+                    if ( node.isMesh ) { node.castShadow = true; }
+            
+                } );
                 scene.add(gltf.scene);
             }
         );
-        scene.background= new THREE.Color(0xF87474);
+        scene.background= new THREE.Color(0xF8A3A5);
         
-        const light = new THREE.AmbientLight( 0xF87474 );
-        scene.add( light );
+        const amlight = new THREE.AmbientLight( 0xF8A3A5 );
+        scene.add( amlight );
+
+        const light1= new THREE.PointLight(0xffffff,2.5,60,2);
+        light1.castShadow=true;
+        scene.add(light1);
+        light1.position.set(0,7,18);
 
         camera.position.x=0;
         camera.position.y=5;
-        camera.position.z=0;
+        camera.position.z=19.0;
 
-        console.log(camera.position.z);
+
 
         function animate(){
             requestAnimationFrame(animate);
