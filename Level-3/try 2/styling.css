@@ -1,21 +1,47 @@
 body {
-    background-image: url('immmg/istockphoto.jpg');
-    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
     font-family: sans-serif;
     font-size: 2em;
     text-align: center;
+    border-image: url('immmg/ascii\ effect\ mouth.png') 30 round;
   }
+
+  .container{
+    margin: 0;
+    padding: 0;
+    background: black;
+    z-index: 1;
+  }
+
   canvas {
     border: solid .2em #fff;
-    height: 90vh;
-    border: 2px solid white;
+    height: 600px;
+    margin: 0;
+    position: relative;
+    bottom: 100px;
+  
+  
   }
  .points, #score
   {
     background-color: yellowgreen;
     border-radius: 7px;
   }
-  div{
-    background-color: white;
-    border-radius: 8px;
+
+  .mouth-top,.mouth-bottom{
+    margin-left: auto;
+    margin-right:auto;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .mouth-bottom{
+    position: relative;
+    top: -110px;
+    height: 300;
+    padding-bottom: 0;
+
   }
