@@ -45,3 +45,21 @@ h1{
     background-image: url("pimg/suit\ background.png");
     background-attachment: fixed;
 }
+
+table{
+    width: 500px;
+}
+
+.g1{
+    height: 8000px;
+    width: 400px;
+    background-image: url("pimg/interviewer-1.png");
+    background-attachment: fixed;
+}
+
+.g2{
+    height: 8000px;
+    width: 400px;
+    background-image: url("pimg/interviewer-2.png");
+    background-attachment: fixed;
+}
