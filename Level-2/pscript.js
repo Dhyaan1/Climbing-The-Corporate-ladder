@@ -25,7 +25,7 @@ const g2 = document.getElementById("guy2")
 
 window.addEventListener("scroll", function(){
     let offset = window.pageYOffset
-    if(offset>= 2500 && Question2_answered==false){
+    if(offset>= 3000 && Question2_answered==false){
         this.alert("Hello2")
         Question2_answered = true
         checkanswer2();
@@ -37,7 +37,7 @@ const g3 = document.getElementById("guy3")
 
 window.addEventListener("scroll", function(){
     let offset = window.pageYOffset
-    if(offset>= 3500 && Question3_answered==false){
+    if(offset>= 4000 && Question3_answered==false){
         this.alert("Hello3")
         Question3_answered = true
         checkanswer3();
@@ -49,7 +49,7 @@ const g4 = document.getElementById("guy4")
 
 window.addEventListener("scroll", function(){
     let offset = window.pageYOffset
-    if(offset>=4500 && Question4_answered==false){
+    if(offset>=5000 && Question4_answered==false){
         this.alert("Hello4")
         Question4_answered = true
         checkanswer4();
@@ -61,7 +61,7 @@ const g5 = document.getElementById("guy5")
 
 window.addEventListener("scroll", function(){
     let offset = window.pageYOffset
-    if(offset>=5500 && Question5_answered==false){
+    if(offset>=6000 && Question5_answered==false){
         this.alert("Hello5")
         Question5_answered = true
         checkanswer5();
