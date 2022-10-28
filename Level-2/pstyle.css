@@ -43,6 +43,5 @@ h1{
 .b5{
     height: 800px;
     background-image: url("pimg/suit\ background.png");
-    background-size: cover;
     background-attachment: fixed;
 }
