@@ -1,0 +1,48 @@
+*{
+    border: 0px;
+    padding: 0;
+    margin: 0;
+}
+div{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    height: 45vh;
+}
+
+h1{
+    font-size: 60px;
+    background: #eee;
+    padding: 8px 24px;
+    border-radius: 16px;
+}
+
+.b1{
+    background-image: url("pimg/pxArt\ \(2\).png");
+    background-size: cover;
+}
+
+.b2{
+    background: red
+}
+
+.b3{
+    height: 800px;
+    background-image: url("pimg/markkkk.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.b4{
+    background : blue
+}
+
+.b5{
+    height: 800px;
+    background-image: url("pimg/suit\ background.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
