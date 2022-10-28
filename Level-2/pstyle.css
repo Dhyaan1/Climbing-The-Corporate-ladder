@@ -4,40 +4,78 @@
     margin: 0;
     background-color: #FE4646;
     background-size: cover;
-};
-div{
     align-items: center;
-    display: flex;
     justify-content: center;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 100%;
-    height: 45vh;
 }
+
 
 .title-card{
     width: 100%;
     height: calc( 25vh * 2);
     object-fit: cover;
-    margin-bottom: 2px;
-    background-attachment: fixed;
 }
 
-.g1,.g2,.g3,.g4,.g5{
-    width: calc(90vw / 6);
-    margin: 0;
-    
-    
-}
-
-.i1,.i2,.i3,.i4,.i5{
+.i1{
+    background-image: url("pimg/interviewer-1.png");
+    background-size:cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 1000px;
+    height: 7000px;
     object-fit: cover;
     object-position: top;
+    margin-top: 104px;
+}
+.i2{
+    background-image: url("pimg/interviewer-2.png");
+    background-size:cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 7000px;
+    object-fit: cover;
+    object-position: top;
+    margin-top: 102px;
+}
+.i3{
+    background-image: url("pimg/interviewer-3.png");
+    background-size:cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 7000px;
+    object-fit: cover;
+    object-position: top;
+    margin-top: 98px;
+}
+.i4{
+    background-image: url("pimg/interviewer-4.png");
+    background-size:cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 7000px;
+    object-fit: cover;
+    object-position: top;
+    margin-top: 102px;
+}
+.i5{
+    background-image: url("pimg/interviewer-5.png");
+    background-size:cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 7000px;
+    object-fit: cover;
+    object-position: top;
+    margin-top: 104px;
 }
 
 
 table{
-    width:100vw;
+    align-items: center;
+    justify-content: center;
+    width:99vw;
+    border-spacing: 0px;
 }
+
