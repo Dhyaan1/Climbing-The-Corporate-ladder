@@ -8,10 +8,10 @@ export default class Experience{
         scene.background= new THREE.Color(0xCD8080);
 
         const camera = new THREE.PerspectiveCamera(39.6,window.innerWidth/window.innerHeight, 0.1,1500);
-        camera.position.set=(0,5,19.0);
-        camera.position.y=5;
-        camera.position.z=1.0;
-        //camera.rotation.x-=Math.PI/2;
+        camera.position.set=(0,20,19.0);
+        camera.position.y=15;
+        camera.position.z=0;
+        camera.rotation.x-=Math.PI/3;
 
         const renderer = new THREE.WebGLRenderer();
         renderer.setSize(window.innerWidth, window.innerHeight);
@@ -28,7 +28,7 @@ export default class Experience{
         var pc2;
         var pc3;
         loader.load(
-            './gltfs/test.glb',
+            './gltfs/test2.glb',
             function(gltf){
                 cube= gltf.scene;
                 gltf.scene.traverse( function( node ) {
@@ -136,12 +136,48 @@ export default class Experience{
         light5.position.z=25;
         light5.shadow.mapSize.height= 1024;
         light5.shadow.mapSize.width= 1024;
-        camera.position.z=19;
-        console.log(light1.position.z);
+        const link=document.querySelector('.link');
+
 
         function animate(){
-            requestAnimationFrame(animate);
-            camera.position.z+=0.04;
+            setTimeout( function() {
+
+                requestAnimationFrame( animate );
+        
+            }, 1000 / 7 );
+            document.onkeydown = checkKey;
+            console.log(camera.position.z)
+            if (camera.position.z>=18 && camera.position.z<=20){
+                link.innerHTML="Play Level 1";
+                console.log(link.innerHTML);
+            }
+            if (camera.position.z>=23 && camera.position.z<=25){
+                link.innerHTML="Play Level 2";
+                console.log(link.innerHTML);
+                
+            }
+            if (camera.position.z>=28){
+                link.innerHTML="Play Level 3";
+                console.log(link.innerHTML);
+            }
+            }
+            function checkKey(e) {
+
+            e = e || window.event;
+
+            if (e.keyCode == '38') {
+            // up arrow
+            camera.position.z-=0.1;
+
+            }
+  
+         else if (e.keyCode == '40') {
+            // down arrow
+            camera.position.z+=0.08;
+        
+
+        }
+            
             renderer.render(scene,camera);
         }
         animate();
