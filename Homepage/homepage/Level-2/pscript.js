@@ -41,7 +41,7 @@ window.addEventListener("scroll", function(){
     
     if(offset>= 5500 && Question2_answered==false){
         g2.style.backgroundImage = "url(pimg/interviewer-2-eyes.png)";
-        //this.alert("Hello2")
+        this.alert("It seems you have cleared level 1. Impressive.")
         Question2_answered = true
         checkanswer2();
     }
@@ -50,7 +50,7 @@ window.addEventListener("scroll", function(){
 
     if(offset>= 7500 && Question3_answered==false){
         g3.style.backgroundImage = "url(pimg/interviewer-3-eyes.png)";
-        //this.alert("Hello3")
+        this.alert("")
         Question3_answered = true
         checkanswer3();
     }
