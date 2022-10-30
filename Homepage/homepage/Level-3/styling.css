@@ -7,15 +7,13 @@ body {
     font-size: 2em;
     text-align: center;
     background-image: url('immmg/asciieffectmouth.png');
-    background-size: cover;
-    background-size: contain;
-    
+    background-size: 318px;
   }
 
   canvas {
     border:  1px solid cyan;
     background-image: url("immmg/suit background.png"); 
-    height: 800px;
+    height: 835px;
     margin: 0;
     position: relative;
   }
@@ -33,7 +31,7 @@ body {
   { font-family: 'Press Start 2P';
     font-size: 70px;
     border-radius: 7px;
-    height: 17px;
+    height: 34px;
     margin: 10;
     width: 200px;
     color: aliceblue;
