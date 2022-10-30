@@ -147,15 +147,31 @@ export default class Experience{
             }, 1000 / 30 );
             document.onkeydown = checkKey;
             const zloc= camera.position.z;
-            if (zloc>=18 && zloc<=20){
-                link.innerHTML="Play Level 1";
+            console.log(zloc);
+            if(zloc<=2){
+                link.innerHTML="";
+                link.setAttribute("href","");
             }
-            if (zloc>=23 && zloc<=25){
+            if(zloc>2 && zloc<=7){
+                link.innerHTML="Dhyaan and Hrishik Present"
+                link.setAttribute("href","");
+            }
+            if(zloc>7 && zloc<16){
+                link.innerHTML="Climbing The Corporate Ladder";
+            }
+            if (zloc>=16 && zloc<=20){
+                link.innerHTML="Play Level 1";
+                link.setAttribute("href","Level-1/level-1.html");
+                //link this to level 1
+            }
+            if (zloc>=24 && zloc<=25){
                 link.innerHTML="Play Level 2";
+                link.setAttribute("href","Level-2/level-2.html");
                 
             }
-            if (zloc>=28){
+            if (zloc>=31){
                 link.innerHTML="Play Level 3";
+                link.setAttribute("href","Level-3/level-3.html");
             }
             }
             function checkKey(e) {
@@ -168,7 +184,7 @@ export default class Experience{
 
             }
   
-         else if (e.keyCode == '40') {
+         else if (e.keyCode == '40' && camera.position.z<32) {
             // down arrow
             camera.position.z+=0.08;
         
