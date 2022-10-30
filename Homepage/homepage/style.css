@@ -32,19 +32,13 @@ body{
   text-decoration: none;
   color: #fff;
   text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
     0 0 42px #33FF33,
     0 0 82px #33FF33;
     transition: 0.1s;
 }
 
-link:hover{
+.link:hover{
   text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
     0 0 42px #FFCC00,
     0 0 82px #FFCC00;
 }
