@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Press+Start+2P&family=Silkscreen&display=swap');
 
 *{
     border: 0px;
@@ -8,6 +8,7 @@
     background-size: cover;
     align-items: center;
     justify-content: center;
+    font-family: orbitron;
 }
 
 
@@ -18,12 +19,12 @@
 }
 
 .i1{
-    background-image: url("pimg/interviewer-1.png");
+    background-image: url(pimg/interviewer-1.png);
     background-size:cover;
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height: 7000px;
+    height: 8000px;
     object-fit: cover;
     object-position: top;
     margin-top: 100px;
@@ -34,7 +35,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height: 7000px;
+    height: 8000px;
     object-fit: cover;
     object-position: top;
     margin-top: 98px;
@@ -45,7 +46,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height: 7000px;
+    height: 8000px;
     object-fit: cover;
     object-position: top;
     margin-top: 94px;
@@ -56,7 +57,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height: 7000px;
+    height: 8000px;
     object-fit: cover;
     object-position: top;
     margin-top: 98px;
@@ -67,33 +68,51 @@
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height: 7000px;
+    height: 8000px;
     object-fit: cover;
     object-position: top;
     margin-top: 100px;
 }
 
 
+
+
 table{
+    z-index: 2;
     align-items: center;
     justify-content: center;
     width:99vw;
     border-spacing: 0px;
+
 }
 
 div.sticky {
     position: sticky;
     top: 0;
-    background-color: #FE4646;
+    /*background-color: #FE4646;
     text-align:left;
     font-family: 'Press Start 2P';
-    font-size: 70px;
-    color: rgb(75, 159, 255);
-    text-shadow:
-        0 0 7px rgb(38, 0, 255),
-        0 0 42px rgb(234, 0, 255);
+    font-size: 70px;*/
+    color: rgb(255, 165, 246);
+    z-index: 0;
+    /*text-shadow:
+        0 0 30px #ffa6f8
+        0 0 30px rgb(38, 0, 255);*/
     }
+
+.score-image{
+    width: 30vw;
+    padding: 0;
+    margin-left: 35vw;
+    mix-blend-mode: lighten;
+    height: 7vw;
+    
+    object-fit: cover;
+}
 
 #score{
     text-align: center;
+    font-size: 7vh;
+    font-family: orbitron;
 }
+
