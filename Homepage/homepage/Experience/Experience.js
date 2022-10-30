@@ -144,21 +144,18 @@ export default class Experience{
 
                 requestAnimationFrame( animate );
         
-            }, 1000 / 7 );
+            }, 1000 / 30 );
             document.onkeydown = checkKey;
-            console.log(camera.position.z)
-            if (camera.position.z>=18 && camera.position.z<=20){
+            const zloc= camera.position.z;
+            if (zloc>=18 && zloc<=20){
                 link.innerHTML="Play Level 1";
-                console.log(link.innerHTML);
             }
-            if (camera.position.z>=23 && camera.position.z<=25){
+            if (zloc>=23 && zloc<=25){
                 link.innerHTML="Play Level 2";
-                console.log(link.innerHTML);
                 
             }
-            if (camera.position.z>=28){
+            if (zloc>=28){
                 link.innerHTML="Play Level 3";
-                console.log(link.innerHTML);
             }
             }
             function checkKey(e) {
