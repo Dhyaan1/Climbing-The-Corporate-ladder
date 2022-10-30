@@ -7,13 +7,15 @@ body {
     font-size: 2em;
     text-align: center;
     background-image: url('immmg/asciieffectmouth.png');
+    background-size: cover;
+    background-size: contain;
     
   }
 
   canvas {
     border:  1px solid cyan;
     background-image: url("immmg/suit background.png"); 
-    height: 2500px;
+    height: 800px;
     margin: 0;
     position: relative;
   }
@@ -29,21 +31,13 @@ body {
   }
   #score
   { font-family: 'Press Start 2P';
-    font-size: 180px;
+    font-size: 70px;
     border-radius: 7px;
-    height: 35px;
+    height: 17px;
     margin: 10;
     width: 200px;
     color: aliceblue;
 
-  }
-  .home{
-    border-radius: 7px;
-    border-color: aliceblue;
-    height: 4px;
-    margin: 10;
-    width: 200px;
-    color: aliceblue;
   }
 
   .mouth-top,.mouth-bottom{

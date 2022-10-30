@@ -19,7 +19,7 @@
 }
 
 .i1{
-    background-image: url(pimg/interviewer-1.png);
+    background-image: url("pimg/interviewer-1.png");
     background-size:cover;
     background-size: contain;
     background-repeat: no-repeat;
@@ -74,9 +74,6 @@
     margin-top: 100px;
 }
 
-
-
-
 table{
     z-index: 2;
     align-items: center;
@@ -117,5 +114,15 @@ div.sticky {
     text-align: center;
     font-size: 7vh;
     font-family: orbitron;
+}
+
+.alert{
+    background-color: white;
+    z-index: 1;
+    line-height: 4vh;
+    top: 48vh;
+    position: fixed;
+    left: 49%;
+    text-align: center;
 }
 
