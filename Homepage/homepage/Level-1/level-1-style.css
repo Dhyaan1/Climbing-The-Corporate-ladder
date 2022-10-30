@@ -21,9 +21,8 @@ body{
     width: 720px;
     display: flex;
     flex-wrap: wrap;
-    
-    
 }
+
 .card.shake{
     animation: shake 0.35s ease-in-out;
   }
@@ -102,7 +101,7 @@ p{
   color: white;
   border: 3px solid white;
   width: 100%;
-  margin-top: 16px;
+  margin-top: 5px;
   border-radius: 7px;
   background-image: url('pxArt.png');
   height: calc(100% / 4 - 30px);
@@ -110,8 +109,8 @@ p{
 }
 .timer{
   color: #EA047E
-  
 }
+
 .details p{
   font-size: 45px;
   height: 85px;
@@ -122,21 +121,7 @@ p{
 .details p b{
   font-weight: 500;
 }
-.details button{
-  cursor: pointer;
-  font-size: 24px;
-  color: #000000;
-  border-radius: 4px;
-  padding: 8px 11px;
-  background: #fff;
-  border: 2px solid #ff00d4;
-  transition: 0.3s ease;
-}
-.details button:hover{
-  color: #fff;
-  background: #ff00ea;
-  border: 2px solid #00ff6a;
-}
+
 @media screen and (max-width: 530px) {
   .cards{
     height: 300px;
@@ -154,12 +139,5 @@ p{
     height: 15px;
     font-size: 17px;
     padding-right: 13px;
-  }
-  .details button{
-    font-size: 13px;
-    padding: 5px 10px;
-    border: none;
-    color: rgb(255, 255, 255);
-    background: #6563ff;
   }
 }
