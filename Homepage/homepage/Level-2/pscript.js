@@ -42,7 +42,7 @@ window.addEventListener("scroll", function(){
         //this.alert("Hello1")   // turn this into a QnA
         radiobtn.style.display='none';
         qbox.style.display='block';
-        question.innerHTML="Hello Developer, it seems you've cleared level 1. Impressive."
+        question.innerHTML="Hello Developer, it seems you've cleared level-1. <br> Impressive."
         subbt.setAttribute('onclick', 'checkanswer1();');
     }
     g1.style.backgroundPositionY = offset * 0.905 + "px"
@@ -112,7 +112,7 @@ window.addEventListener("scroll", function(){
         g5.style.backgroundImage = "url(pimg/interviewer-5-eyes.png)";
         radiobtn.style.display='none';
         qbox.style.display='block';
-        question.innerHTML="Before we can send you off to him, we have three questions. Don't worry, it's simply formality."
+        question.innerHTML="Before we can send you off to him, we have three questions. Don't worry, it's just a formality."
         subbt.setAttribute('onclick', 'checkanswer5();');
     }
     g5.style.backgroundPositionY = offset * 0.905 + "px"
