@@ -21,7 +21,14 @@ body{
   z-index: -4;
 }
 
+
 .link{
+  text-shadow:
+    0 0 42px #FFCC00,
+    0 0 82px #FFCC00;
+}
+
+.link:hover{
   position: absolute;
   padding-top: 47vh;
   width: 100vw;
@@ -35,10 +42,4 @@ body{
     0 0 42px #33FF33,
     0 0 82px #33FF33;
     transition: 0.1s;
-}
-
-.link:hover{
-  text-shadow:
-    0 0 42px #FFCC00,
-    0 0 82px #FFCC00;
 }
