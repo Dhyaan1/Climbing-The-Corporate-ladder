@@ -7,6 +7,8 @@
 }
 body{
   background-color: #CD8080;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 .experience{
   position: fixed;
@@ -22,13 +24,9 @@ body{
 }
 
 
-.link{
-  text-shadow:
-    0 0 42px #FFCC00,
-    0 0 82px #FFCC00;
-}
 
-.link:hover{
+
+.link{
   position: absolute;
   padding-top: 47vh;
   width: 100vw;
@@ -39,7 +37,13 @@ body{
   text-decoration: none;
   color: #fff;
   text-shadow:
-    0 0 42px #33FF33,
-    0 0 82px #33FF33;
+    0 0 42px #FFCC00,
+    0 0 82px #FFCC00;
     transition: 0.1s;
+}
+
+.link :hover{
+  text-shadow:
+  0 0 42px #33FF33,
+  0 0 82px #33FF33;
 }
