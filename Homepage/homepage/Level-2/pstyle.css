@@ -10,6 +10,9 @@
     justify-content: center;
 }
 
+body{
+    overflow-y: hidden;
+}
 
 .title-card{
     width: 100%;
@@ -128,14 +131,15 @@ div.sticky {
     --aug-br:13px;
 
     /*vanilla css*/
+    font-size: 12px;
     display: none;
     background: linear-gradient(55deg, #d7d7d7,#ffffff);
     font-family: 'Silkscreen';
     align-items: center;
     color: black;
     z-index: 1;
-    top: 65%;
-    transform: translateY(-35%);
+    top: 57%;
+    transform: translateY(-43%);
     left: 50%;
     transform: translateX(-50%);
     position: fixed;
