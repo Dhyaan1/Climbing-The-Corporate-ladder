@@ -23,10 +23,10 @@ body{
 
 .link{
   position: absolute;
-  padding-top: 47vh;
-  width: 100vw;
-  text-align: center;
-  line-height : 6vh;
+  top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
   font-size: 5vh;
   font-family: silkscreen;
   text-decoration: none;
