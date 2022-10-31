@@ -12,67 +12,10 @@ body {
     top: 5px;
     border:  1px solid cyan;
     background-image: url("immmg/suit background.png"); 
-    height: 920px;
+    height: 98%;
     margin: 0;
     position: relative;
   }
- .points1
-  { font-family: "Silkscreen";
-    font-size: 100px;
-    border-radius: 7px;
-    height: 45px;
-    margin: 10;
-    width: 200px;
-    z-index: 1;
-    line-height: 4vh;
-    top: 24vh;
-    position: fixed;
-    left: 8.25%;
-  }
-
-  .points3
-  { font-family: "Silkscreen";
-    font-size: 100px;
-    border-radius: 7px;
-    height: 45px;
-    margin: 10;
-    width: 200px;
-    z-index: 1;
-    line-height: 4vh;
-    top: 80vh;
-    position: fixed;
-    left: 8.25%;
-  }
-
-  .points2
-  { font-family: "Silkscreen";
-    font-size: 100px;
-    border-radius: 7px;
-    height: 35px;
-    margin: 10;
-    width: 200px;
-    z-index: 1;
-    line-height: 4vh;
-    top: 24vh;
-    position: fixed;
-    left: 68.5%;
-  }
-
-  .points4
-  { font-family: "Silkscreen";
-    font-size: 100px;
-    border-radius: 7px;
-    height: 35px;
-    margin: 10;
-    width: 200px;
-    z-index: 1;
-    line-height: 4vh;
-    top: 80vh;
-    position: fixed;
-    left: 68.5%;
-  }
-
-
 
  #score2
   { font-family: "Silkscreen";
