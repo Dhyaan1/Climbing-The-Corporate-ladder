@@ -1,6 +1,6 @@
 const canvas = document.getElementById('tetris');
 const context = canvas.getContext('2d');
-
+let color = document.body.style.color;
 
 context.scale(20, 20);
 
@@ -100,12 +100,12 @@ function drawMatrix(matrix, offset) {
                 context.fillRect(x + offset.x,
                                  y + offset.y,
                                  1, 1);
-                context.shadowColor = colors[value];//hereeeeeeeeeeeeeeeeeeeeee
+                context.shadowColor = colors[value];//here
                 context.shadowBlur = 55;///extent of the shadow
                 context.lineJoin = "bevel";
-                context.lineWidth = 5;
-                context.strokeStyle = "#38f";
                 context.strokeRect(30, 0, 0, 0);
+                document.body.style.color = "#FFF";
+                document.body.style.textShadow = '3px 3px 42px ' + colors[value], '3px 3px 82px ' + colors[value];
             }
         });
     });
@@ -221,7 +221,8 @@ function update(time = 0) {
 }
 
 function updateScore() {
-    document.getElementById('score').innerText = player.score;
+    document.getElementById('score1').innerText = player.score;
+    document.getElementById('score2').innerText = player.score;
 }
 
 document.addEventListener('keydown', event => {
