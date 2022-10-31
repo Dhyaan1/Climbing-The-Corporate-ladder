@@ -8,9 +8,8 @@ export default class Experience{
         scene.background= new THREE.Color(0xCD8080);
 
         const camera = new THREE.PerspectiveCamera(39.6,window.innerWidth/window.innerHeight, 0.1,1500);
-        camera.position.set=(0,20,19.0);
         camera.position.y=15;
-        camera.position.z=0;
+        camera.position.z=27.5;
         camera.rotation.x-=Math.PI/3;
 
         const renderer = new THREE.WebGLRenderer();
@@ -28,7 +27,7 @@ export default class Experience{
         var pc2;
         var pc3;
         loader.load(
-            './gltfs/test2.glb',
+            './gltfs/test_optimised.glb',
             function(gltf){
                 cube= gltf.scene;
                 gltf.scene.traverse( function( node ) {
@@ -88,7 +87,7 @@ export default class Experience{
         scene.add(light1);
         light1.position.x=0;
         light1.position.y=10;
-        light1.position.z=-4;
+        light1.position.z=-11;
         light1.shadow.mapSize.height= 1024;
         light1.shadow.mapSize.width= 1024;
 
@@ -99,7 +98,7 @@ export default class Experience{
         scene.add(light2);
         light2.position.x=0;
         light2.position.y=10;
-        light2.position.z=3;
+        light2.position.z=-4;
         light2.shadow.mapSize.height= 1024;
         light2.shadow.mapSize.width= 1024;
 
@@ -111,7 +110,7 @@ export default class Experience{
         scene.add(light3);
         light3.position.x=0;
         light3.position.y=10;
-        light3.position.z=10;
+        light3.position.z=3;
         light3.shadow.mapSize.height= 1024;
         light3.shadow.mapSize.width= 1024;
 
@@ -122,7 +121,7 @@ export default class Experience{
         scene.add(light4);
         light4.position.x=0;
         light4.position.y=10;
-        light4.position.z=18;
+        light4.position.z=10;
         light4.shadow.mapSize.height= 1024;
         light4.shadow.mapSize.width= 1024;
 
@@ -133,11 +132,23 @@ export default class Experience{
         scene.add(light5);
         light5.position.x=0;
         light5.position.y=10;
-        light5.position.z=25;
+        light5.position.z=18;
         light5.shadow.mapSize.height= 1024;
         light5.shadow.mapSize.width= 1024;
-        const link=document.querySelector('.link');
 
+
+        const light6= new THREE.PointLight(0xffffff,122,50,2);
+        light6.castShadow=true;
+        light6.shadow.bias=-0.01;
+        light6.shadow.radius=8;
+        scene.add(light6);
+        light5.position.x=0;
+        light5.position.y=10;
+        light6.position.z=-25;
+        light6.shadow.mapSize.height= 1024;
+        light6.shadow.mapSize.width= 1024;
+   
+        const link=document.querySelector('.link');
 
         function animate(){
             setTimeout( function() {
@@ -148,28 +159,28 @@ export default class Experience{
             document.onkeydown = checkKey;
             const zloc= camera.position.z;
             console.log(zloc);
-            if(zloc<=2){
+            if(zloc>=25.5){
                 link.innerHTML="";
                 link.setAttribute("href","");
             }
-            if(zloc>2 && zloc<=7){
+            if(zloc<25.5 && zloc>=20.5){
                 link.innerHTML="Dhyaan and Hrishik Present"
                 link.setAttribute("href","");
             }
-            if(zloc>7 && zloc<16){
+            if(zloc<20.5 && zloc>11.5){
                 link.innerHTML="Climbing The Corporate Ladder";
             }
-            if (zloc>=16 && zloc<=20){
+            if (zloc<=11.5 && zloc>=7.5){
                 link.innerHTML="Play Level 1";
                 link.setAttribute("href","Level-1/level-1.html");
                 //link this to level 1
             }
-            if (zloc>=24 && zloc<=25){
+            if (zloc<=3.5 && zloc>=2.5){
                 link.innerHTML="Play Level 2";
                 link.setAttribute("href","Level-2/level-2.html");
                 
             }
-            if (zloc>=31){
+            if (zloc<=-3.5){
                 link.innerHTML="Play Level 3";
                 link.setAttribute("href","Level-3/level-3.html");
             }
@@ -178,13 +189,13 @@ export default class Experience{
 
             e = e || window.event;
 
-            if (e.keyCode == '38') {
+            if (e.keyCode == '38'&&camera.position.z>-8.4) {
             // up arrow
             camera.position.z-=0.1;
 
             }
   
-         else if (e.keyCode == '40' && camera.position.z<32) {
+         else if (e.keyCode == '40' && camera.position.z<29) {
             // down arrow
             camera.position.z+=0.08;
         
