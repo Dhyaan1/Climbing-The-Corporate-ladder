@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Press+Start+2P&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&family=Orbitron:wght@500&family=Press+Start+2P&family=Silkscreen&display=swap');
 
 *{
     border: 0px;
@@ -8,7 +8,6 @@
     background-size: cover;
     align-items: center;
     justify-content: center;
-    font-family: orbitron;
 }
 
 
@@ -28,6 +27,7 @@
     object-fit: cover;
     object-position: top;
     margin-top: 100px;
+    transition: background-image 0.1s;
 }
 .i2{
     background-image: url("pimg/interviewer-2.png");
@@ -39,6 +39,7 @@
     object-fit: cover;
     object-position: top;
     margin-top: 98px;
+    transition: background-image 0.1s;
 }
 .i3{
     background-image: url("pimg/interviewer-3.png");
@@ -50,6 +51,7 @@
     object-fit: cover;
     object-position: top;
     margin-top: 94px;
+    transition: background-image 0.1s;
 }
 .i4{
     background-image: url("pimg/interviewer-4.png");
@@ -61,6 +63,7 @@
     object-fit: cover;
     object-position: top;
     margin-top: 98px;
+    transition: background-image 0.1s;
 }
 .i5{
     background-image: url("pimg/interviewer-5.png");
@@ -72,6 +75,7 @@
     object-fit: cover;
     object-position: top;
     margin-top: 100px;
+    transition: background-image 0.1s;
 }
 
 table{
@@ -80,6 +84,7 @@ table{
     justify-content: center;
     width:99vw;
     border-spacing: 0px;
+    
 
 }
 
@@ -92,7 +97,7 @@ div.sticky {
     text-align:left;
     font-family: 'Press Start 2P';
     font-size: 70px;*/
-    color: rgb(255, 165, 246);
+    color: #ffa5f6;
     z-index: 0;
     /*text-shadow:
         0 0 30px #ffa6f8
@@ -117,12 +122,73 @@ div.sticky {
 }
 
 .alert{
-    background-color: white;
+    /*augmented ui*/
+    --aug-inlay-bg: rgb(35, 26, 26);
+    --aug-tl: 17px;
+    --aug-br:13px;
+
+    /*vanilla css*/
+    display: none;
+    background: linear-gradient(55deg, #d7d7d7,#ffffff);
+    font-family: 'Silkscreen';
+    align-items: center;
+    color: black;
     z-index: 1;
-    line-height: 4vh;
-    top: 48vh;
+    top: 65%;
+    transform: translateY(-35%);
+    left: 50%;
+    transform: translateX(-50%);
     position: fixed;
-    left: 49%;
-    text-align: center;
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
+
+label{
+    background-color: transparent;
+}
+
+.submitbutton{
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #855454;
+    border-radius:50px;
+    box-shadow: 3px 3px 0px #855454;
+    transition: 0.1s;
+}
+.submitbutton:hover{
+    opacity: 0.8;
+}
+
+.submitbutton:active{
+    margin-left: 3px;
+    margin-top: 3px;
+    box-shadow: none;
+}
+#radiobtn{
+    background: transparent;
+    color: white;
+}
+.slider{
+    width: 90%;
+    background-color: transparent;
+}
+
+#sliderspan{
+    background-color: transparent;
+}
+
+output{
+    color: white;
+}
+
+
+h1{
+    color: white;
+    background-color: transparent;
+}
