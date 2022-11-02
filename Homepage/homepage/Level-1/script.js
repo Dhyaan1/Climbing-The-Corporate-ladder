@@ -15,15 +15,13 @@ let score = 0;
 function initTimer() {
     if(timeLeft <= 0) {
         lockBoard=true;
-        const finScore=score;
-        localStorage.setItem('score1',finScore);
         return clearInterval(timer);
     }
     timeLeft--;
     score = timeLeft*42069
     timeTag.innerText = timeLeft;
     scoreTag.innerText = score;
-    this.classList.add("score");
+    this.classList.add('score');
 }
 function flipCard(){
     if(!isPlaying) {
