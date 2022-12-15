@@ -21,7 +21,7 @@ function initTimer() {
     score = timeLeft*42069
     timeTag.innerText = timeLeft;
     scoreTag.innerText = score;
-    this.classList.add('score');
+    this.classList.add("score");
 }
 function flipCard(){
     if(!isPlaying) {
