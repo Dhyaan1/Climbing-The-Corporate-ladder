@@ -7,7 +7,7 @@
 }
 
 body{
-    height: 100vh;
+    height: 100%;
     display: flex;
     background-image: url('level-1-bg.png');
 }
@@ -17,8 +17,9 @@ body{
 }
 
 .deck{
-    height: 720px;
-    width: 720px;
+    height: 75vh;
+    width: 40vw;
+    
     display: flex;
     flex-wrap: wrap;
 }
@@ -85,9 +86,9 @@ body{
     color:  #37E2D5;
     text-shadow: 2px 2px 0px black;
     background-color: #FBCB0A;
-    line-height: 160px;
+    line-height: 16.5vh;
     text-align: center;
-    font-size: 50px;
+    font-size: 8vh;
     font-family: 'Press Start 2P';
 }
 p{
@@ -100,10 +101,11 @@ p{
   font-family: 'silkscreen';
   color: white;
   border: 3px solid white;
-  width: 100%;
+  width: 40vw;
   margin-top: 5px;
   border-radius: 7px;
   background-image: url('pxArt.png');
+  background-size: 50vh;
   height: calc(100% / 4 - 30px);
   justify-content: space-between;
 }
@@ -112,12 +114,12 @@ p{
 }
 
 .details p{
-  font-size: 45px;
-  height: 85px;
+  font-size: 6vh;
+  height: 10vh;
 }
 .details p span{
-  margin-left: 20px;
+  margin-left: 2vw;
 }
 .details p b{
-  font-weight: 500;
+  font-weight: 700;
 }
