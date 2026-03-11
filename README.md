@@ -6,7 +6,7 @@ We were well aware that a project mocking interview processes wasn't helping our
 
 Interestingly, ChatGPT went live almost exactly a month after we were done, in November 2022. So everything that you see here is a 100% human written artisanal software lol.
 
-The directory structure is messy and redundant, but pales in comparison to how messy the commits are. I've tried to preserve it for sentimental value.
+The directory structure is messy and redundant, but pales in comparison to how messy the commits are (although we managed to remove the swear words in Oct 2024). I've tried to preserve it for sentimental value.
 
 I made the entire home screen with Blender and brought it into the website with Three.js. There is some clever imagery here, the moving cubicles is meant to resemble a "ladder" you're supposedly climbing, until you hit retro computers, which you "go into" to play the level/interview round.
 
