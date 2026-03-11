@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import { BoxGeometry, Camera, MeshBasicMaterial } from "three";
-import { GLTFLoader } from "THREE/examples/jsm/loaders/GLTFLoader.js";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 
 export default class Experience {
   constructor(canvas) {
@@ -12,7 +12,7 @@ export default class Experience {
       39.6,
       window.innerWidth / window.innerHeight,
       0.1,
-      1500
+      1500,
     );
     camera.position.y = 15;
     camera.position.z = 27.5;
